@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEEPAK - PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }html, body {
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  color: #00f7ff;
+  background: #000;
+  overflow: hidden;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 30px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00f7ff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  color: #00f7ff;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #d4faff;
+}
+
+.info-box {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.info-box h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00f7ff;
+  padding-bottom: 5px;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.info-box ul li::before {
+  content: "\272A ";
+  color: #00f7ff;
+}
+
+.telegram-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #00f7ff, #0051ff);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+.telegram-btn:hover {
+  background: linear-gradient(135deg, #0051ff, #00f7ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00f7ff;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+  </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>  <div class="container">
+    <div class="card">
+      <img src="file.png" alt="Deepak" class="profile-pic" />
+      <h1>DEEPAK</h1>
+      <p>A techie brain with a gamer's instinct — decoding the web and dominating the battlegrounds.</p><div class="info-box">
+    <h2>About Me</h2>
+    <ul>
+      <li><strong>Country:</strong> India</li>
+      <li><strong>Age:</strong> 16</li>
+      <li><strong>College:</strong> Tolani College (Commerce)</li>
+      <li><strong>Gamer:</strong> Free Fire 1-Tap Headshot Player</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, PHP, Lua</li>
+      <li>Telegram Bots & Automation</li>
+      <li>Mod Menu Creation</li>
+      <li>APK Modification</li>
+      <li>Network Analysis</li>
+      <li>Phishing Tools</li>
+      <li>UI/UX & Dark Web Simulations</li>
+      <li>Android Toolkit Handling</li>
+      <li>Ethical Hacking Basics</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h2>Learning Now</h2>
+    <ul>
+      <li>Lua scripting (Free Fire mods)</li>
+      <li>APK Reverse Engineering</li>
+      <li>Termux + ADB Tools</li>
+      <li>Payload Inspection & Network Tricks</li>
+    </ul>
+  </div>
+
+  <a href="https://t.me/+45C30DBDnrI1ZmZl" class="telegram-btn" target="_blank">
+    Join My Telegram
+  </a>
+
+  <footer>
+    © 2025 DEEPAK. All rights reserved. | Built with 💻 Passion & 🔫 Precision
+  </footer>
+</div>
+
+  </div>
+</body>
+</html>
